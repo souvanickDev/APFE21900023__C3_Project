@@ -66,8 +66,11 @@ public class Restaurant {
         return name;
     }
 
-    public Integer getOrderValue(List<Item> selectedItems) {
-        //Will be implemented in next commit
-        return null;
+    public Long getOrderValue(List<Item> selectedItems) {
+        Long totalValue = 0L;
+        for(Item item: selectedItems) {
+            totalValue = totalValue + item.getPrice();
+        }
+        return totalValue;
     }
 }
