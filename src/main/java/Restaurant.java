@@ -66,4 +66,8 @@ public class Restaurant {
         return name;
     }
 
+    public Integer getOrderValue(List<Item> selectedItems) {
+        //Will be implemented in next commit
+        return null;
+    }
 }
